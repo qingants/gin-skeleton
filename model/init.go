@@ -21,3 +21,14 @@ func Close() {
 func Get() *gorm.DB {
 	return rds
 }
+
+type LoveMovie struct {
+	ID  uint
+	Uid uint
+	Mid uint
+}
+
+
+func (LoveMovie) TableName() string {
+	return "lover_movie"
+}

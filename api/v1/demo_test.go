@@ -29,3 +29,7 @@ func TestLogin(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkLogin(b *testing.B) {
+
+}

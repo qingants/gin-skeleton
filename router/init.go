@@ -34,6 +34,7 @@ func SetupRouter() *gin.Engine {
 	//app.GET("/v1/api/gin-skeleton/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	help(app)
+	movie(app)
 
 	return app
 }
