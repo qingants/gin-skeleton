@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  upload:
+    image: ibroomcorn/gin-skeleton:latest
+    volumes:
+      - ./data:/srv/app/data
+      - ./conf/:/srv/app/conf
+    restart: always
+    environment:
+      SKELETON: TESTING
+    ports:
+      - "8080:8080"
